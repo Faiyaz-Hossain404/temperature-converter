@@ -13,6 +13,7 @@ function computeTemp(e) {
 
     case "fahrenheit":
       celsius.value = (currentEvent - 32) * 1.8;
+      kelvin.value = (currentEvent - 32) * 1.8 + 273.15;
   }
 }
 
