@@ -8,18 +8,18 @@ function computeTemp(e) {
 
   switch (e.target.name) {
     case "celsius":
-      fahrenheit.value = currentEvent * 1.8 + 32;
-      kelvin.value = currentEvent * 273.15;
+      fahrenheit.value = (currentEvent * 1.8 + 32).toFixed(2);
+      kelvin.value = (currentEvent * 273.15).toFixed(2);
       break;
 
     case "fahrenheit":
-      celsius.value = (currentEvent - 32) / 1.8;
-      kelvin.value = (currentEvent - 32) / 1.8 + 273.15;
+      celsius.value = ((currentEvent - 32) / 1.8).toFixed(2);
+      kelvin.value = ((currentEvent - 32) / 1.8 + 273.15).toFixed(2);
       break;
 
     case "kelvin":
-      celsius.value = currentEvent - 273.15;
-      fahrenheit.value = (currentEvent - 273.15) * 1.8 + 32;
+      celsius.value = (currentEvent - 273.15).toFixed(2);
+      fahrenheit.value = ((currentEvent - 273.15) * 1.8 + 32).toFixed(2);
       break;
 
     default:
