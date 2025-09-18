@@ -1,0 +1,8 @@
+body {
+  background-image: linear-gradient(to left bottom, #71c3f7, #eef2f3);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+}
