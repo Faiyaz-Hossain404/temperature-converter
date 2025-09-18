@@ -3,6 +3,7 @@ const fahrenheit = document.getElementById("fahrenheit");
 const kelvin = document.getElementById("kelvin");
 
 function computeTemp(e) {
+  console.log("The Event", e);
   const currentEvent = e.target.value;
 
   switch (e.target.name) {
